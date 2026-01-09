@@ -1,0 +1,26 @@
+## remove duplicates
+time complexity : o(n)
+space complexity :o(1)
+solution : public class RemoveDuplicates {
+              public static void main(String[] args) {
+                int[]arr = {1,1,2,2,3,4,4,5};
+                   int n = arr.length;
+                    if(n==0) {
+                        System.out.println("array is empty");
+                          return;
+                      }
+                         int j = 0;
+                          for(int i =1;i<n;i++) {
+                            if(arr[i] != arr[j]) {
+                               j ++;
+                              arr[j] = arr[i];
+                         }
+                        }
+                           int lengthwithoutduplicate = j+1;
+                            System.out.println("length of array after removing duplicate: "+lengthwithoutduplicates) ;
+                              System.out.println("array after removing duplicates :");
+                               for(int i = 0;i < lengthwithoutduplicates:i++) {
+                                System.out.println(arr[i]+"");
+                    }
+                 }
+              }
